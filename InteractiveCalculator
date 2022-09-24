@@ -1,0 +1,85 @@
+const prompt = require("prompt-sync")({ sigint: true });
+
+let inputNeeded = true;
+
+let number = [];
+let operator = [];
+let number2 = [];
+
+
+
+        while(inputNeeded) {
+        const num1 = prompt('Please enter your first number: ');
+        console.log(`You typed in ${num1}`);
+        number.push(Number(num1));
+
+        const op = prompt("Please type your operator like: + - / *  : ");
+        console.log(`You chose ${op} as an operator.`);
+        operator.push(op);
+
+        const num2 = prompt('Please enter your second number: ');
+        console.log(`You typed in ${num2}`);
+        number2.push(Number(num2));
+
+        function calculate(num1,op,num2) {
+
+          if (op === "+") {
+              let result = num1 + num2;
+            } else if (op === "-") {
+              let result = num1 - num2;
+            } else if (op === "/") {
+              let result = num1 / num2;
+            } else if (op === "*") {
+              let result = num1 * num2;
+            } else if (op === "%") {
+              let result = num1 % num2;
+            } else {
+              let result = "Error!"
+            }
+
+            calculate(number,operator,number2);
+
+        inputNeeded=false;
+
+}
+}
+
+
+
+
+
+/*const prompt = require('prompt-sync')({sigint: true});
+
+prompt.start();
+
+let noInputYet = true;
+
+while (!noInputYet) {
+console.log("This is a simple calculator I built. It can solve simple additions, subtractions, multiplications and divisions for you. Be gentle.")
+const num1 = prompt('Please enter your first number');
+num1 = Number(num1);
+console.log(`Your number was ${num1}.`);
+}
+
+num1.push(input);
+console.log(num1);
+*/
+
+/*
+function calculator(num1, num2, op) {
+
+    if (op === "+") {
+        let result = num1 + num2;
+      } else if (op === "-") {
+        let result = num1 - num2;
+      } else if (op === "/") {
+        let result = num1 / num2;
+      } else if (op === "*") {
+        let result = num1 * num2;
+      } else if (op === "%") {
+        let result = num1 % num2;
+      } else {
+        let result = "Error!"
+      }
+}
+*/

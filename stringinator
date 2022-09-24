@@ -1,0 +1,112 @@
+let famousPersonLength = [];
+
+const betterFormattedSentence = "This sentence has some spaces and delimiters," +
+                         " make it better readable."
+
+function checkTheWeirdSentence(weirdSentence)
+{
+    if(weirdSentence === betterFormattedSentence)
+    {
+        return "Thank you so much for making this sentence readable!!!";
+    }
+
+    return "Your sentence is still not perfect: " + weirdSentence;
+}
+
+// length()
+// Console log the famous person with the longes name 
+
+let famousPersons = ["Elvis Presley", "Neil Armstrong", "Ludwig van Beethoven",
+ "Vincent van Gogh", "Garry Kasparov", "Michael Jordan"];
+
+ function famousPeopleLength(famousPersons,famousPersonLength) {
+    for(let i = 0; i <= famousPersons.length; i++) {
+        famousPersonLength.push(famousPersons[2].length);
+        console.log(famousPersons[2]);
+    }
+ }
+
+famousPeopleLength(famousPersons,famousPersonLength);
+
+console.log(famousPersonLength);
+
+// split()
+// 1 Split all fruits in fruitsToCheck with the symbol ,
+// 2 Console log all fruits from fruitsToCheck which are not included in the array fruitsWeHave.
+ 
+let fruitsDoubles = [];
+
+ let fruitsWeHave = ["Bananas", "Apples", "Pineapples", "Watermelons", "Mangos"];
+ let fruitsToCheck = ["Mangos","Kiwis","Oranges","Watermelons","Coconuts","Papayas","Grapes"];
+
+
+ console.log(`1) ` + fruitsToCheck.join(", "));
+
+ for (i=0; i <= fruitsToCheck.length; i++) {
+        if(!fruitsWeHave.includes(fruitsToCheck[i])) {
+        fruitsDoubles.push(fruitsToCheck[i]);
+}
+ }
+console.log(`2) In fruitsToCheck included fruitsWeHave are: ${fruitsDoubles.join(", ")}`);
+
+
+// replace()
+// TODO: Correct the mistake in the song text by replacing the wrong strings,
+// with the right ones and console log the right text.
+
+let childrenSongText = "Old Mac Donalds had a farm, i ei i ei oh, and on his " +
+" farm he had some pigs, i ei i ei oh, and a muh muh " +
+" here and a muh muh there, here a muh, there a muh, " +
+" everywhere muh muh...";
+
+let corrChildrenSongText = childrenSongText.replace(/muh/g, "oink");
+console.log(corrChildrenSongText);
+
+
+/*
+
+// toUpperCase()/toLowerCase()
+// Split the email addresses in mailsToCheck to be able to check each email address.
+// Use the toUpperCase() function to make all letters of a string big case or the toLowerCase() function to make all letters small case.
+
+let emailAddresses = ["superlongEmailAdRess@gmail.com", "mRdAbaliNa@smth.net", "welovecleancode@codecool.com", "lAsTmAiLwAsWiThOuTcAmElStYlE@cleancode.com"];
+let mailsToCheck = ["SUPERlongEmaiLAdRESs@GMaIL.com", "MRDabaLINa@SMtH.NeT" ,"WELOVECLEANCODE@CODECOOL.COM", "lAsTmAiLwAsWiThOuTcAmElStYlE", "@cleanCODE.COM"];
+
+for (i=0; i<=mailsToCheck.length; i++) {
+    console.log(mailsToCheck[i].toLowerCase());
+    console.log(emailAddresses[i].toLowerCase());
+    if (mailsToCheck.includes(emailAddresses[i])) {
+        console.log("true");
+    } else console.log("false");
+}
+
+*/
+
+// TODO: make weirdSentence readable and call the function checkTheWeirdSentence.
+// Console log the result of the function and check if the function is happy with
+// your formatting
+
+let weirdSentence = "  This|sentence|has|some|spaces|" +
+                     "and|delimiters,|make|it" +
+                     "|better|readable.              ";
+
+
+let corrWeirdSentence = weirdSentence.replace("|", " ");
+console.log(corrWeirdSentence);
+
+
+// TODO: slice out all animals from animalMatrix (only in rows) and log them. 
+
+const animalMatrix = "kirqcatxui\n"+
+                    "cccowjkleq\n"+
+                    "rabbitiiqo\n"+
+                    "pbnchicken\n"+
+                    "fridogasns\n";
+
+const cat = animalMatrix.slice(4,7);
+const cow = animalMatrix.slice(13,16);
+const rabbit = animalMatrix.slice(22,28);
+const chicken = animalMatrix.slice(36,43);
+const dog = animalMatrix.slice(47,50);
+
+console.log(`Animals: ${cat}, ${cow}, ${rabbit}, ${chicken}, ${dog}`);

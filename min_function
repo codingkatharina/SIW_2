@@ -1,0 +1,23 @@
+// Always choosing smallern number 
+
+function min(num1,num2) {
+    if (num1 < num2) {
+        console.log(num1 + ' is smaller');
+    }else {
+        console.log(num2 + ' is smaller');
+    }
+}
+
+min(400,80);
+
+// Always choosing bigger number
+
+function max(num1,num2) {
+    if (num1 > num2) {
+        console.log(num1 + ' is bigger');
+    }else {
+        console.log(num2 + ' is bigger');
+    }
+}
+
+max(400,80);

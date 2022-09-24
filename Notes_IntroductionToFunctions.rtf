@@ -1,0 +1,227 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue11;\red71\green137\blue205;\red255\green255\blue255;
+\red202\green202\blue202;\red212\green212\blue212;\red180\green180\blue186;\red79\green122\blue61;\red71\green137\blue205;
+\red202\green202\blue202;\red212\green212\blue212;\red180\green180\blue186;\red79\green122\blue61;\red194\green126\blue101;
+\red167\green197\blue151;\red79\green122\blue61;\red203\green203\blue202;\red78\green122\blue60;\red78\green122\blue60;
+\red79\green122\blue60;\red202\green202\blue202;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c0;\cssrgb\c33936\c61427\c84130;\cssrgb\c100000\c100000\c100000\c0;
+\cssrgb\c83229\c83229\c83125;\cssrgb\c86370\c86370\c86262;\cssrgb\c75781\c75782\c77648;\cssrgb\c37609\c54466\c30476;\cssrgb\c33936\c61427\c84130;
+\cssrgb\c83229\c83229\c83125;\cssrgb\c86370\c86370\c86262;\cssrgb\c75781\c75782\c77648;\cssrgb\c37609\c54466\c30476;\cssrgb\c80778\c56830\c46925;
+\cssrgb\c71008\c80807\c65805;\cssrgb\c37570\c54422\c30364;\cssrgb\c83320\c83320\c83112;\cssrgb\c37492\c54332\c30138;\cssrgb\c37452\c54286\c30024;
+\cssrgb\c37531\c54377\c30251;\cssrgb\c83137\c83137\c83137;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 	\
+	
+\f1\b\fs36 Why functions are useful\
+\pard\tx751\pardeftab720\partightenfactor0
+\cf0 	
+\f0\b0\fs24 repeating codes/commands can be replaced with functions\
+	if some parameters of codes/commands need to be changed, you can do it simply in the function\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\
+\
+
+\f1\b\fs36 \cf2 	!
+\f0\b0\fs24 \cf0  
+\f1\b\fs36 Nett to know \cf2 !\cf0 \
+	
+\f0\b0\fs28 functions are dynamic and can change over time
+\fs24 \
+\
+\
+	
+\f1\b\fs36 Creating a function
+\f0\b0\fs24 \
+\
+	To write a function you start with the keyword function\
+	followed by the name we want to give the function \
+	and the parentheses inside curly brackets:\
+\
+	e.g.: 		
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5 \'a0functionName\cf6 \strokec6 ()\cf5 \strokec5 \'a0\cf6 \strokec6 \{\cf7 \strokec7 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0	\'a0\cf8 \strokec8 //\'a0function\'a0body code\cf7 \strokec7 \
+\cf6 \strokec6 		\}\
+\
+\
+	
+\f1\b\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Calling a function\
+	
+\f0\b0\fs24 or invoking a function\
+	otherwise function will not run
+\f2 \cf7 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 	e.g.: 		
+\f2 \cf9 \cb4 \expnd0\expndtw0\kerning0
+function\cf10 \'a0functionName\cf11 ()\cf10 \'a0\cf11 \{\cf12 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \'a0\'a0\'a0\'a0\'a0\'a0\'a0	\'a0\cf13 //\'a0function\'a0body code\cf12 \
+\cf11 		\}\
+		\
+		functionName():\
+\
+\
+\
+	
+\f1\b\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 Parameters/Arguments\
+	
+\f0\b0\fs24 functions can have placeholders (here: someValue) which can be given value later on by using function name to call it
+\f2 \cf11 \cb4 \expnd0\expndtw0\kerning0
+\
+	\
+	
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 e.g.:
+\f2 \cf11 \cb4 \expnd0\expndtw0\kerning0
+ 	\cf3 \outl0\strokewidth0 \strokec3 function\cf5 \strokec5  printValue\cf6 \strokec6 (\cf5 \strokec5 someValue\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5     		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  someValue\cf6 \strokec6 );\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+		printValue\cf6 \strokec6 (\cf14 \strokec14 'abc'\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The item I was given is: abc\
+\
+	
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 multiple values can be used \
+\
+	e.g.:  	
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5  printValue\cf6 \strokec6 (\cf5 \strokec5 someValue\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  someValue\cf6 \strokec6 );\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+		printValue\cf6 \strokec6 (\cf14 \strokec14 'abc'\cf6 \strokec6 );\cf5 \strokec5      \cf8 \strokec8 // -> The item I was given is: abc\cf5 \strokec5 \
+		printValue\cf6 \strokec6 (\cf14 \strokec14 'Hello!'\cf6 \strokec6 );\cf5 \strokec5   \cf8 \strokec8 // -> The item I was given is: Hello!\cf5 \strokec5 \
+		printValue\cf6 \strokec6 (\cf15 \strokec15 6\cf6 \strokec6 );\cf5 \strokec5          \cf8 \strokec8 // -> The item I was given is: 6\cf5 \strokec5 \
+		printValue\cf6 \strokec6 (\cf3 \strokec3 false\cf6 \strokec6 );\cf5 \strokec5      \cf8 \strokec8 // -> The item I was given is: false\cf5 \strokec5 \
+\cf8 \strokec8 \
+	
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 this also works:\
+\
+\cb4 		
+\f2 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5  printValue\cf6 \strokec6 (\cf5 \strokec5 someValue\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+   		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  someValue\cf6 \strokec6 );\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		let\cf5 \strokec5  variable \cf6 \strokec6 =\cf5 \strokec5  \cf15 \strokec15 17\cf6 \strokec6 ;\cf5 \strokec5 \
+		printValue\cf6 \strokec6 (\cf5 \strokec5 variable\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The item I was given is: 17\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf16 \strokec16 \
+\
+	
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 also this works:\
+\
+		
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5  print1\cf6 \strokec6 (\cf5 \strokec5 someValue\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  someValue\cf6 \strokec6 );\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		function\cf5 \strokec5  print2\cf6 \strokec6 (\cf5 \strokec5 arg\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+   		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  arg\cf6 \strokec6 );\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		function\cf5 \strokec5  print3\cf6 \strokec6 (\cf5 \strokec5 xxx\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf14 \strokec14 'The item I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  xxx\cf6 \strokec6 );\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		let\cf5 \strokec5  variable \cf6 \strokec6 =\cf5 \strokec5  \cf15 \strokec15 20\cf6 \strokec6 ;\cf5 \strokec5 \
+\
+		print1\cf6 \strokec6 (\cf5 \strokec5 variable\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The item I was given is: 20\cf5 \strokec5 \
+		print2\cf6 \strokec6 (\cf5 \strokec5 variable\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The item I was given is: 20\cf5 \strokec5 \
+		print3\cf6 \strokec6 (\cf5 \strokec5 variable\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The item I was given is: 20\
+\
+\
+	
+\f1\b\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Multiple Parameters/Arguments\
+\
+		
+\fs24 e.g.:\cb4  	
+\f2\b0 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5  printValues\cf6 \strokec6 (\cf5 \strokec5 value1\cf6 \strokec6 ,\cf5 \strokec5  value2\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    			console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf5 \strokec5 value1 \cf6 \strokec6 +\cf5 \strokec5  \cf14 \strokec14 ', '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  value2\cf6 \strokec6 );\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 			\}\cf5 \strokec5 \
+\
+			printValues\cf6 \strokec6 (\cf14 \strokec14 'abc'\cf6 \strokec6 ,\cf5 \strokec5  \cf15 \strokec15 123\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> abc, 123\cf17 \strokec17 \
+\
+\
+	\
+\cf18 \strokec18 	
+\f1\b\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Function & Variable Scope\
+	
+\f0\b0\fs24 If we declare a variable inside a function and try tot use it outside, we\'92ll get an error\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 		function\cf5 \strokec5  printValue\cf6 \strokec6 (\cf5 \strokec5 value\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+   		\cf3 \strokec3 let\cf5 \strokec5  stringToPrint \cf6 \strokec6 =\cf5 \strokec5  \cf14 \strokec14 'The value I was given is: '\cf5 \strokec5  \cf6 \strokec6 +\cf5 \strokec5  value\cf6 \strokec6 ;\cf5 \strokec5 \
+    		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf5 \strokec5 stringToPrint\cf6 \strokec6 );\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+		printValue\cf6 \strokec6 (\cf15 \strokec15 10\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The value I was given is: 10\cf5 \strokec5 \
+		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf5 \strokec5 stringToPrint\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> error\
+\
+\
+	
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 However we can use variables that were declared outside the function\
+\
+		
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 function\cf5 \strokec5  printValue\cf6 \strokec6 (\cf5 \strokec5 value\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf5 \strokec5 startString \cf6 \strokec6 +\cf5 \strokec5  value\cf6 \strokec6 );\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		let\cf5 \strokec5  startString \cf6 \strokec6 =\cf5 \strokec5  \cf14 \strokec14 'The value I was given is: '\cf6 \strokec6 ;\cf5 \strokec5 \
+		printValue\cf6 \strokec6 (\cf15 \strokec15 10\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> The value I was given is: 10\
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 \
+\cf17 \strokec17 \
+\cf19 \strokec19 	
+\f1\b\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Return Statements\
+	
+\f0\b0\fs24 statements/variables can be returned like this
+\f2 \cf19 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec19 \
+\cf16 \strokec16 \
+		\cf3 \strokec3 function\cf5 \strokec5  add10\cf6 \strokec6 (\cf5 \strokec5 number\cf6 \strokec6 )\cf5 \strokec5  \cf6 \strokec6 \{\cf5 \strokec5 \
+    		\cf3 \strokec3 let\cf5 \strokec5  newNumber \cf6 \strokec6 =\cf5 \strokec5  number \cf6 \strokec6 +\cf5 \strokec5  \cf15 \strokec15 10\cf6 \strokec6 ;\cf5 \strokec5 \
+    		\cf3 \strokec3 return\cf5 \strokec5  newNumber\cf6 \strokec6 ;\cf5 \strokec5 \
+\cf6 \strokec6 		\}\cf5 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 		let\cf5 \strokec5  fifteen \cf6 \strokec6 =\cf5 \strokec5  add10\cf6 \strokec6 (\cf15 \strokec15 5\cf6 \strokec6 );\cf5 \strokec5 \
+		console\cf6 \strokec6 .\cf5 \strokec5 log\cf6 \strokec6 (\cf5 \strokec5 fifteen\cf6 \strokec6 );\cf5 \strokec5  \cf8 \strokec8 // -> 15\cf5 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf20 \strokec20 \
+\pard\pardeftab720\partightenfactor0
+\cf21 \cb1 \strokec21 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx751\pardeftab720\partightenfactor0
+
+\f2 \cf11 \cb4 \expnd0\expndtw0\kerning0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\cb1 \
+}

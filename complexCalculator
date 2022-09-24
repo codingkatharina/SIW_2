@@ -1,0 +1,205 @@
+const prompt = require("prompt-sync")({ sigint: true });
+
+// Variables 
+// Texts - Greetings & Introduction
+const GREETING_TEXT = "Welcome to complexCalculator™";
+const INTRODUCTION_TEXT = "Simple additions (+), subtractions (-), multiplications (*), divisions (/) and modulus calculations (%) can be done here.";
+const INSTRUCTION_TEXT = "Please choose which calculation you want to make by entering the used operator";
+const OPERATORS_TEXT = "+  -  *  /  %"
+const ENTER_FIRST_NUMBER = "Please enter first number.";
+const ENTER_SECOND_NUMBER = "Please enter second number.";
+const CORRECT_ENTRY = "Thank you.";
+const WRONG_ENTRY = "Entry was not correct. You can enter the following characters:"; 
+const NUMS_TO_CHOOSE_FROM = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
+
+const NUMS = [];
+
+let numIsTrue = true; 
+let opIsTrue = true;
+
+
+// Functions
+// displaying text in console
+function displayText (text) {
+    console.log(text);
+}
+
+// checking if operator regarding ASCII
+// ASCII 43 -> +
+// ASCII 45 -> -
+// ASCII 42 -> *  
+// ASCII 47 -> /
+// ASCII 37 -> %
+function checkOperatorDependencies (op) {
+    let charCode = op.charCodeAt(0);
+        if (charCode === 43 || charCode === 45 || charCode === 42 || charCode === 47 || charCode === 37) {
+        displayText(CORRECT_ENTRY);
+    }   else {displayText(WRONG_ENTRY);
+                displayText(OPERATORS_TEXT)
+                opIsTrue = false;
+}
+}
+
+// checking if number regarding ASCII
+function checkNumberDependencies (numToCheck) {
+    let charCode = numToCheck.charCodeAt(0);
+    if (charCode >= 48 && charCode <=57) {
+        displayText(CORRECT_ENTRY);
+        NUMS.push(num);
+    } else {displayText(WRONG_ENTRY);
+            displayText(NUMS_TO_CHOOSE_FROM);
+            numIsTrue = false;}
+}
+
+//Calculations
+//addition
+
+
+
+// Starting Screen 
+console.clear();
+displayText(GREETING_TEXT);
+displayText(INTRODUCTION_TEXT);
+displayText(INSTRUCTION_TEXT);
+operator = prompt(displayText(OPERATORS_TEXT));
+   
+checkOperatorDependencies(operator);
+if (!opIsTrue) {
+} 
+
+if (operator === "+") {
+    while (NUMS < 1) {
+        num = prompt(displayText(ENTER_FIRST_NUMBER));
+        checkNumberDependencies(num);
+        num = prompt(displayText(ENTER_SECOND_NUMBER));
+        checkNumberDependencies(num);
+        result = Number(NUMS[0]) + Number(NUMS[1]);
+        console.log(`${NUMS[0]} + ${NUMS[1]} = ${result}`);
+    }
+}  else if (operator === "-") {
+        while (NUMS < 1) {
+            num = prompt(displayText(ENTER_FIRST_NUMBER));
+            checkNumberDependencies(num);
+            num = prompt(displayText(ENTER_SECOND_NUMBER));
+            checkNumberDependencies(num);
+            result = Number(NUMS[0]) - Number(NUMS[1]);
+            console.log(`${NUMS[0]} - ${NUMS[1]} = ${result}`);
+        }
+}
+    else if (operator === "*") {
+        while (NUMS < 1) {
+            num = prompt(displayText(ENTER_FIRST_NUMBER));
+            checkNumberDependencies(num);
+            num = prompt(displayText(ENTER_SECOND_NUMBER));
+            checkNumberDependencies(num);
+            result = Number(NUMS[0]) * Number(NUMS[1]);
+            console.log(`${NUMS[0]} * ${NUMS[1]} = ${result}`);
+        }
+    }
+        else if (operator === "/") {
+            while (NUMS < 1) {
+                num = prompt(displayText(ENTER_FIRST_NUMBER));
+                checkNumberDependencies(num);
+                num = prompt(displayText(ENTER_SECOND_NUMBER));
+                checkNumberDependencies(num);
+                result = Number(NUMS[0]) / Number(NUMS[1]);
+                console.log(`${NUMS[0]} / ${NUMS[1]} = ${result}`);
+            }
+        }
+            else if (operator === "%") {
+                while (NUMS < 1) {
+                    num = prompt(displayText(ENTER_FIRST_NUMBER));
+                    checkNumberDependencies(num);
+                    num = prompt(displayText(ENTER_SECOND_NUMBER));
+                    checkNumberDependencies(num);
+                    result = Number(NUMS[0]) % Number(NUMS[1]);
+                    console.log(`${NUMS[0]} % ${NUMS[1]} = ${result}`);
+                }
+            }
+
+
+
+/*
+let inputNeeded = true;
+
+let number = [];
+let operator = [];
+let number2 = [];
+
+
+
+        while(inputNeeded) {
+        const num1 = prompt('Please enter your first number: ');
+        console.log(`You typed in ${num1}`);
+        number.push(Number(num1));
+
+        const op = prompt("Please type your operator like: + - / *  : ");
+        console.log(`You chose ${op} as an operator.`);
+        operator.push(op);
+
+        const num2 = prompt('Please enter your second number: ');
+        console.log(`You typed in ${num2}`);
+        number2.push(Number(num2));
+
+        function calculate(num1,op,num2) {
+
+          if (op === "+") {
+              let result = num1 + num2;
+            } else if (op === "-") {
+              let result = num1 - num2;
+            } else if (op === "/") {
+              let result = num1 / num2;
+            } else if (op === "*") {
+              let result = num1 * num2;
+            } else if (op === "%") {
+              let result = num1 % num2;
+            } else {
+              let result = "Error!"
+            }
+
+            calculate(number,operator,number2);
+
+        inputNeeded=false;
+
+}
+}
+
+
+
+
+
+/*const prompt = require('prompt-sync')({sigint: true});
+
+prompt.start();
+
+let noInputYet = true;
+
+while (!noInputYet) {
+console.log("This is a simple calculator I built. It can solve simple additions, subtractions, multiplications and divisions for you. Be gentle.")
+const num1 = prompt('Please enter your first number');
+num1 = Number(num1);
+console.log(`Your number was ${num1}.`);
+}
+
+num1.push(input);
+console.log(num1);
+*/
+
+/*
+function calculator(num1, num2, op) {
+
+    if (op === "+") {
+        let result = num1 + num2;
+      } else if (op === "-") {
+        let result = num1 - num2;
+      } else if (op === "/") {
+        let result = num1 / num2;
+      } else if (op === "*") {
+        let result = num1 * num2;
+      } else if (op === "%") {
+        let result = num1 % num2;
+      } else {
+        let result = "Error!"
+      }
+}
+*/
